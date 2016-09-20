@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
 	
 	## When you set a matrix, invalidate the cache
 	set <- function(m) {
-		x <<- y
+		x <<- m
 		cached_inverse <<- NULL
 	}
 	get <- function() x
